@@ -120,7 +120,7 @@ class Loader extends PluginBase implements Listener{
      * @param bool $save
      * @return bool
      */
-    public function setPlayerMaxHealth(Player $player, $amount, $save = false){
+    public function setPlayerMaxHealth(Player $player, int $amount, bool $save = false): bool{
         if(!is_numeric($amount)){
             return false;
         }
@@ -138,7 +138,7 @@ class Loader extends PluginBase implements Listener{
      * @param Player $player
      * @param int $amount
      */
-    private function savePlayerMaxHealth(Player $player, $amount){
+    private function savePlayerMaxHealth(Player $player, int $amount){
         $this->database->set($player->getName(), $amount);
         if($amount == $this->getDefaultHealth()){
             $this->database->remove($player->getName());
