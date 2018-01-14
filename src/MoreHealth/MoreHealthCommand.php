@@ -6,6 +6,7 @@ use pocketmine\command\CommandSender;
 use pocketmine\command\PluginIdentifiableCommand;
 use pocketmine\Player;
 use pocketmine\utils\TextFormat;
+use pocketmine\plugin\Plugin;
 
 class MoreHealthCommand extends Command implements PluginIdentifiableCommand{
     public $plugin;
@@ -202,7 +203,7 @@ class MoreHealthCommand extends Command implements PluginIdentifiableCommand{
         return true;
     }
 
-    public function getPlugin(): Plugin{
+    public function getPlugin() : Plugin{
         return $this->plugin;
     }
 } 
