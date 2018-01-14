@@ -202,7 +202,7 @@ class MoreHealthCommand extends Command implements PluginIdentifiableCommand{
         return true;
     }
 
-    public function getPlugin(){
+    public function getPlugin(): Plugin{
         return $this->plugin;
     }
 } 
