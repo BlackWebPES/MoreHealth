@@ -20,7 +20,7 @@ class Loader extends PluginBase implements Listener{
 
         $this->database = new Config($this->getDataFolder() . "Health.yml", Config::YAML);
         if(!$this->database->exists("defaulthealth") || !is_numeric($this->database->get("defaulthealth"))){
-            $this->database->set("defaulthealth", 20);
+            $this->database->set("defaulthealth", 80);
             $this->database->save();
         }
 
@@ -77,7 +77,7 @@ class Loader extends PluginBase implements Listener{
      */
     public function getDefaultHealth(){
         if(!$this->database->exists("defaulthealth") || !is_numeric($this->database->get("defaulthealth"))){
-            $this->database->set("defaulthealth", 20);
+            $this->database->set("defaulthealth", 80);
             $this->database->save();
         }
         return $this->database->get("defaulthealth");
