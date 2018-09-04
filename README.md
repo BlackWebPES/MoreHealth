@@ -1,4 +1,0 @@
-MoreHealth
-==========
-
-Increase players health!
