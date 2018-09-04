@@ -19,4 +19,4 @@ class EventHandler implements Listener{
         $player = $event->getPlayer();
         $this->plugin->setPlayerMaxHealth($player, $this->plugin->getPlayerMaxHealth($player));
     }
-} 
+}
