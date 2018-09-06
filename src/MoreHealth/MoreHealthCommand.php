@@ -12,7 +12,7 @@ class MoreHealthCommand extends Command implements PluginIdentifiableCommand{
     public $plugin;
 
     public function __construct(Loader $plugin){
-        parent::__construct("morehealth", "Change the player max health", "/morehealth <setdefault|restoredefault|set|restore>", ["moreh", "mhealth", "mh"]);
+        parent::__construct("morehealth", "§fChange The Players Max Health", "§f/morehealth <setdefault|restoredefault|set|restore>", ["moreh", "mhealth", "mh"]);
         $this->setPermission("morehealth");
         $this->plugin = $plugin;
     }
@@ -206,4 +206,4 @@ class MoreHealthCommand extends Command implements PluginIdentifiableCommand{
     public function getPlugin() : Plugin{
         return $this->plugin;
     }
-} 
+}
