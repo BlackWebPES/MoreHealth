@@ -34,7 +34,7 @@ class Loader extends PluginBase implements Listener{
 
     public function onDisable(){
         foreach($this->getServer()->getOnlinePlayers() as $p){
-            $p->setMaxHealth(20);
+            $p->setMaxHealth(80);
         }
     }
 
