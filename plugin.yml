@@ -3,30 +3,29 @@ main: MoreHealth\Loader
 version: 2.0.0-BETA
 api: 3.0.0-ALPHA10
 author: VMPE Development Team
-website: https://github.com/iksaku/MoreHealth
 
 permissions:
     morehealth:
         default: op
-        description: "Change player's max health"
+        description: ""
         children:
             morehealth.setdefault:
                 default: op
-                description: "Modify the default health limit in MoreHealth.yml"
+                description: ""
             morehealth.set:
                 default: op
-                description: "Change the health limit"
+                description: ""
                 children:
                     morehealth.set.other:
                         default: op
-                        description: "Change another player's health"
+                        description: ""
             morehealth.restoredefault:
                 default: op
-                description: "Restore the default health limit to 20 in MoreHealth.yml"
+                description: ""
             morehealth.restore:
                 default: op
-                description: "Restore the health limit to the default specified in MoreHealth.yml"
+                description: ""
                 children:
                     morehealth.restore.other:
                         default: op
-                        description: "Restore another player's health"
+                        description: ""
