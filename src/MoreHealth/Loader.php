@@ -1,4 +1,5 @@
 <?php
+
 namespace MoreHealth;
 
 use MoreHealth\provider\DataProvider;
